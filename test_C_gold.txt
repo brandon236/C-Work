@@ -1,0 +1,118 @@
+********** INSERT
+***** no reallocation
+*** in size 3 array, insert size 2 array at 0
+size: 3
+allocated size: 5
+0 2 4 
+size: 5
+allocated size: 5
+1 3 0 2 4 
+*** in size 3 array, insert size 2 array at 1
+size: 3
+allocated size: 5
+0 2 4 
+size: 5
+allocated size: 5
+0 1 3 2 4 
+*** in size 3 array, insert size 2 array at 2
+size: 3
+allocated size: 5
+0 2 4 
+size: 5
+allocated size: 5
+0 2 1 3 4 
+*** in size 3 array, insert size 2 array at 3
+size: 3
+allocated size: 5
+0 2 4 
+size: 5
+allocated size: 5
+0 2 4 1 3 
+*** trigger subscript range exception
+caught: 1
+***** reallocation
+*** in size 3 array, insert size 3 array at 0
+size: 3
+allocated size: 5
+0 2 4 
+size: 6
+allocated size: 10
+1 3 5 0 2 4 
+*** in size 3 array, insert size 3 array at 1
+size: 3
+allocated size: 5
+0 2 4 
+size: 6
+allocated size: 10
+0 1 3 5 2 4 
+*** in size 3 array, insert size 3 array at 2
+size: 3
+allocated size: 5
+0 2 4 
+size: 6
+allocated size: 10
+0 2 1 3 5 4 
+********** REMOVE
+***** no reallocation
+*** in size 4 array, remove [0,1)
+size: 4
+allocated size: 5
+0 2 4 6 
+size: 3
+allocated size: 5
+2 4 6 
+*** in size 4 array, remove [0,2)
+size: 4
+allocated size: 5
+0 2 4 6 
+size: 2
+allocated size: 5
+4 6 
+*** in size 4 array, remove [1,3)
+size: 4
+allocated size: 5
+0 2 4 6 
+size: 2
+allocated size: 5
+0 6 
+*** trigger subscript range exception
+caught: 1
+size: 2
+allocated size: 5
+0 6 
+***** reallocation
+*** in size 6 array, remove [0,1)
+size: 6
+allocated size: 10
+0 2 4 6 8 10 
+size: 5
+allocated size: 5
+2 4 6 8 10 
+*** in size 6 array, remove [1,2)
+size: 6
+allocated size: 10
+0 2 4 6 8 10 
+size: 5
+allocated size: 5
+0 4 6 8 10 
+*** in size 6 array, remove [5,6)
+size: 6
+allocated size: 10
+0 2 4 6 8 10 
+size: 5
+allocated size: 5
+0 2 4 6 8 
+*** in size 6 array, remove [1,6)
+size: 6
+allocated size: 10
+0 2 4 6 8 10 
+size: 1
+allocated size: 5
+0 
+*** in size 6 array, remove [0,6)
+size: 6
+allocated size: 10
+0 2 4 6 8 10 
+size: 0
+allocated size: 0
+

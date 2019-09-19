@@ -1,0 +1,34 @@
+*** copy constructor: size 3 array
+size: 3
+allocated size: 5
+0 2 4 
+size: 3
+allocated size: 5
+0 2 4 
+size: 3
+allocated size: 5
+0 2 4 
+a.remove(0, 2);
+size: 1
+allocated size: 5
+4 
+size: 3
+allocated size: 5
+0 2 4 
+*** operator=: size 3 array
+size: 3
+allocated size: 5
+0 2 4 
+size: 3
+allocated size: 5
+0 2 4 
+size: 3
+allocated size: 5
+0 2 4 
+a.remove(0, 2);
+size: 1
+allocated size: 5
+4 
+size: 3
+allocated size: 5
+0 2 4 

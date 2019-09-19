@@ -1,0 +1,26 @@
+***** array size: 0
+size: 0
+allocated size: 0
+
+check for exception in empty array
+caught: 1
+caught const: 1
+***** array size: 1
+2
+size: 1
+allocated size: 5
+2 
+***** array size: 2
+size: 2
+allocated size: 5
+2 4 
+***** array size: 3
+size: 3
+allocated size: 5
+2 3 4 
+***** trigger subscript range exception
+caught: 1
+***** trigger re-allocation
+size: 6
+allocated size: 10
+1 2 99 3 4 5 
