@@ -1,6 +1,3 @@
-//Name: Brandon Macleod
-//Number: V00830599
-
 #include <iostream>
 
 #include "dynamic_array.h"
