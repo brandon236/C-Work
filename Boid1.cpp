@@ -59,11 +59,11 @@ void ABoid1::BeginPlay()
 	InRange.Add(false);
 	InRange.Add(false);
 
-	ObsticleArray.Add(true);
-	ObsticleArray.Add(true);
-	ObsticleArray.Add(true);
-	ObsticleArray.Add(true);
-	ObsticleArray.Add(true);
+	ObstacleArray.Add(true);
+	ObstacleArray.Add(true);
+	ObstacleArray.Add(true);
+	ObstacleArray.Add(true);
+	ObstacleArray.Add(true);
 	
 	
 	if (Curve2) {
