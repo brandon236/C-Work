@@ -1,2 +1,2 @@
-Physics based animation in C++
-The following is a physics based animation I did in C++
+The following is a physics based animation I did in C++. All of the physics calculations were done using Lagrangian mechanics. The animation itself consists of a main sphere and a stick that contain two balls on either end. The sphere has a hole that goes through the center so the stick can be placed through it. The two balls on the ends of the stick serve as blockers so the stick doesn't completely fall through the sphere. The sphere is the placed on a slope where it rolls down. As it rotates, the stick continuously falls through which each half rotation. Since the sphere is rolling down a hill, it will continue to increase its velocity and eventually, it will reach a speed where the stick will appear to stop moving due to the high velocity. Here's a video of the animation to better illustrate what it's doing.
+
